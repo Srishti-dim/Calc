@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #d6dfec;
+    border-radius: 5px;
+    border-width: 3px;
+  }
+  
+  input[type="number"],
+  select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+  }
+
+  input[type="text"],
+  select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+  }
+  
+  .error-icon {
+    display: none;
+    float: right;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    margin-top: -18px;
+  }
+
+  .error-icon:hover + .hide {
+    display: block;
+    color: red;
+  }
+
+  .hide {
+    display: none;
+    float: right;
+    margin-top: -17px;
+    margin-right: 17px;
+    font-size: 12px;
+  }
+      
+  
+  .button {
+    background-color: #6559F5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .button:hover {
+    background-color: #3e369a;
+  }
+  
+  /* Modal styles */
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  label{
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .div-start{
+    margin-top: 60px;
+  }
+
+/* --------- Tooltip Styles ---------- */
+
+.tooltip{
+    position: relative;
+    background: rgba(156, 157, 157, 0.3);
+    padding: 4px 7px;
+    border-radius: 100%;
+    font-size: 12px;
+    cursor: help;
+    }
+    .tooltip::before, .tooltip::after{
+    position: absolute;
+    left: 50%;
+    opacity: 0;
+    transition: allease0.3s;
+    }
+    .tooltip::before{
+    content: "";
+    border-width: 10px 8px 08px;
+    border-style: solid;
+    border-color: #747474 transparent transparent transparent;
+    top: -10px;
+    margin-left: -8px;
+    }
+    .tooltip::after{
+    content: attr(data-tooltip);
+    background: #747474;
+    top: -5px;
+    transform: translateY(-100%);
+    font-size: 12px;
+    margin-left: -150px;
+    width: 200px;
+    border-radius: 5px;
+    color: #fff;
+    padding: 6px;
+    text-align: center;
+    }
+
+    
+    /* Hover states */
+    
+    .tooltip:hover::before, .tooltip:hover::after{
+    opacity: 1;
+    }
+
+#income, #extra-income, #age, #deductions {
+    margin-bottom: 27px;
+}
